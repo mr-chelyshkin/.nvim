@@ -6,5 +6,6 @@
 
 # Install
 
-Copy configs in `~/.config/nvim/lua/`
-
+- Copy configs in `~/.config/nvim/lua/`  
+- [:Lazy sync]
+- [:MasonInstallAll]
