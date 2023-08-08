@@ -9,7 +9,7 @@ lspconfig.gopls.setup {
   capabilities = capabilities,
   cmd = { "gopls" },
   filetypes = { "go", "gomod", "gowork", "gotmpl" },
-  root_dir = lspconfig.util.root_pattern("go.mod", "go.work", ".git"),
+  root_dir = util.root_pattern("go.mod", "go.work", ".git"),
   settings = {
     gopls = {
       completeUnimported = true,
