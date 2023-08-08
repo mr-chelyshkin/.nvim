@@ -20,7 +20,7 @@ local opts = {
           vim.lsp.buf.format({ bufnr = bufnr })
         end,
       })
-    end,
+    end
   end,
 }
 return opts
