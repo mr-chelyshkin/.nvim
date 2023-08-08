@@ -17,8 +17,20 @@ local plugins = {
         "rust-analyzer",
         -- Python
         "pyright",
+        "mypy",
+        "ruff",
+        "black",
       },
     },
+  },
+
+  -- Python plugins
+  {
+    "jose-elias-alvarez/null-ls.nvim",
+    ft = {"python"},
+    opts = function()
+      return require "custom.configs.python"
+    end,
   },
 
   -- Golang plugins
