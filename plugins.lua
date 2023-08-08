@@ -23,26 +23,22 @@ local plugins = {
 
   -- Golang plugins
   {
-    "jose-elias-alvarez/null-ls.nvim",
-    ft = "go",
+    "ray-x/go.nvim",
+    dependencies = {
+      "ray-x/guihua.lua",
+      "neovim/nvim-lspconfig",
+      "nvim-treesitter/nvim-treesitter",
+    },
     opts = function()
-      return require "custom.configs.null-ls"
+      return require "custom.configs.go"
     end,
-  },
-  {
-    "mfussenegger/nvim-dap",
-    init = function()
-      require("core.utils").load_mappings("dap")
+    config = function()
+      require("go").setup()
+      require("go.format").goimport()
     end,
-  },
-  {
-    "dreamsofcode-io/nvim-dap-go",
-    ft = "go",
-    dependencies = "mfussenegger/nvim-dap",
-    config = function(_, opts)
-      require("dap-go").setup(opts)
-      require("core.utils").load_mappings("dap_go")
-    end,
-  },
+    event = {"CmdlineEnter"},
+    ft = {"go", 'gomod'},
+    build = ':lua require("go.install").update_all_sync()',
+  }
 }
 return plugins
