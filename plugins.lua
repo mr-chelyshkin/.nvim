@@ -44,5 +44,15 @@ local plugins = {
       require("core.utils").load_mappings("dap_go")
     end,
   },
+  {
+    "olexsmir/gopher.nvim",
+    ft = "go",
+    config = function(_, opts)
+      require("gopher").setup(opts)
+    end,
+    build = function()
+      vim.cmd [[silent! GoInstallDeps]]
+    end,
+  },
 }
 return plugins
