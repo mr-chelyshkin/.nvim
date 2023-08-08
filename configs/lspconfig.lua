@@ -4,7 +4,7 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 local lspconfig = require("lspconfig")
 local util = require "lspconfig/util"
 
-lspconfig.gopls.setup({
+lspconfig.gopls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
   cmd = { "gopls" }
@@ -19,7 +19,7 @@ lspconfig.gopls.setup({
       },
     },
   },
-})
+}
 
 lspconfig.rust_analyzer.setup({
   capabilities = capabilities,
