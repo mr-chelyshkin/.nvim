@@ -9,13 +9,12 @@ local plugins = {
   {
     "williamboman/mason.nvim",
     opts = {
+      -- [external deps] :MasonInstallAll
       ensure_installed = {
         -- Golang
         "gopls",
-
         -- Rust
         "rust-analyzer",
-
         -- Python
         "pyright",
       },
@@ -24,11 +23,26 @@ local plugins = {
 
   -- Golang plugins
   {
-    "fatih/vim-go",
+    "jose-elias-alvarez/null-ls.nvim",
     ft = "go",
-    config = function ()
+    opts = function()
+      return require "custom.config.null-ls"
     end,
   },
-
+  {
+    "mfussenegger/nvim-dap",
+    init = function()
+      require("core.utils").load_mappings("dap")
+    end,
+  },
+  {
+    "dreamsofcode-io/nvim-dap-go",
+    ft = "go",
+    dependencies = "mfussenegger/nvim-dap",
+    config = function(_, opts)
+      require("dap-go").setup(opts)
+      require("core.utils").load_mappings("dap_go")
+    end,
+  },
 }
 return plugins

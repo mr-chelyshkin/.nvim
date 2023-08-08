@@ -1,13 +1,24 @@
 local on_attach = require("plugins.configs.lspconfig").on_attach
 local capabilities = require("plugins.configs.lspconfig").capabilities
 
-local lspconfig = require "lspconfig"
+local lspconfig = require("lspconfig")
+local utils = require "lspconfig/util"
 
 lspconfig.gopls.setup({
-  capabilities = capabilities,
   on_attach = on_attach,
-  filetypes = {"go"},
-  root_dir = lspconfig.util.root_pattern("go.mod"),
+  capabilities = capabilities,
+  cmd = { "gopls" }
+  filetypes = { "go", "gomod", "gowork", "gotmpl" },
+  root_dir = lspconfig.util.root_pattern("go.mod", "go.work", ".git"),
+  settings = {
+    gopls = {
+      completeUnimported = true,
+      usePlaceholders = true,
+      analyses = {
+        unusedparams = true,
+      },
+    },
+  },
 })
 
 lspconfig.rust_analyzer.setup({
