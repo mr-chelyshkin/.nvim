@@ -25,12 +25,10 @@ lspconfig.pyright.setup({
   capabilities = capabilities,
   on_attach = on_attach,
   filetypes = { "python" },
-
 })
 
-lspconfig.rust_analyzer.setup({
-  capabilities = capabilities,
+lspconfig.clangd.setup({
+  cmd = { "clangd", "--background-index" },
   on_attach = on_attach,
-  filetypes = { "rust" },
-  root_dir = lspconfig.util.root_pattern("Cargo.toml"),
+  capabilities = capabilities,
 })

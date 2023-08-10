@@ -13,8 +13,6 @@ local plugins = {
       ensure_installed = {
         -- Golang
         "gopls",
-        -- Rust
-        "rust-analyzer",
         -- Python
         "pyright",
         "mypy",
