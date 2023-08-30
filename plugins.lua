@@ -48,6 +48,7 @@ local plugins = {
     "ray-x/go.nvim",
     dependencies = {
       "ray-x/guihua.lua",
+      "rcarriga/nvim-dap-ui",
       "neovim/nvim-lspconfig",
       "mfussenegger/nvim-dap",
       "theHamsta/nvim-dap-virtual-text",
