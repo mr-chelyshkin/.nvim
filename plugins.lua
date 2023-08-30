@@ -8,12 +8,6 @@ local plugins = {
   },
   {
     "williamboman/mason.nvim",
-    dependencies = {
-      "rcarriga/nvim-dap-ui",
-      "mfussenegger/nvim-dap",
-      "theHamsta/nvim-dap-virtual-text",
-      "nvim-treesitter/nvim-treesitter",
-    },
     opts = {
       -- [external deps] :MasonInstallAll
       ensure_installed = {
@@ -37,6 +31,16 @@ local plugins = {
           enable = true,
         },
       }
+    end,
+  },
+  {
+    "mfussenegger/nvim-dap",
+    dependencies = {
+      "rcarriga/nvim-dap-ui",
+      "theHamsta/nvim-dap-virtual-text",
+    },
+    config = function()
+
     end,
   },
 
