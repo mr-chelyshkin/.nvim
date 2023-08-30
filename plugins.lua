@@ -114,7 +114,6 @@ local plugins = {
     end,
     config = function()
       require("go").setup()
-      require("go.format").goimport()
     end,
     event = {"CmdlineEnter"},
     ft = {"go", 'gomod'},
