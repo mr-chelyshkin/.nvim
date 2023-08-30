@@ -23,10 +23,9 @@ local plugins = {
   },
   {
     "nvim-treesitter/nvim-treesitter",
-    run = ':TSUpdate',
+    run = ':TSInstall all',
     config = function()
       require'nvim-treesitter.configs'.setup {
-        ensure_installed = {"go", "python"},
         highlight = {
           enable = true,
           use_languagetree = true
@@ -34,6 +33,7 @@ local plugins = {
         indent = {
           enable = true
         },
+        sync_install = false,
         auto_install = true,
       }
     end,
