@@ -29,6 +29,10 @@ local plugins = {
         ensure_installed = {"go", "python"},
         highlight = {
           enable = true,
+          use_languagetree = true
+        },
+        indent = {
+          enable = true
         },
       }
     end,
