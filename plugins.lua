@@ -8,6 +8,12 @@ local plugins = {
   },
   {
     "williamboman/mason.nvim",
+    dependencies = {
+      "rcarriga/nvim-dap-ui",
+      "mfussenegger/nvim-dap",
+      "theHamsta/nvim-dap-virtual-text",
+      "nvim-treesitter/nvim-treesitter",
+    },
     opts = {
       -- [external deps] :MasonInstallAll
       ensure_installed = {
@@ -48,11 +54,7 @@ local plugins = {
     "ray-x/go.nvim",
     dependencies = {
       "ray-x/guihua.lua",
-      "rcarriga/nvim-dap-ui",
       "neovim/nvim-lspconfig",
-      "mfussenegger/nvim-dap",
-      "theHamsta/nvim-dap-virtual-text",
-      "nvim-treesitter/nvim-treesitter",
     },
     opts = function()
       return require "custom.configs.go"
