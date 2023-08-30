@@ -49,6 +49,8 @@ local plugins = {
     dependencies = {
       "ray-x/guihua.lua",
       "neovim/nvim-lspconfig",
+      "mfussenegger/nvim-dap",
+      "theHamsta/nvim-dap-virtual-text",
       "nvim-treesitter/nvim-treesitter",
     },
     opts = function()
