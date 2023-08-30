@@ -34,6 +34,7 @@ local plugins = {
         indent = {
           enable = true
         },
+        auto_install = true,
       }
     end,
   },
