@@ -29,6 +29,6 @@ mv .nvim custom
 | [:MasonInstallAll] | reinstall all plugins                    |
 | [:TS...]           | highlight commands                       |
 
-Most of the commands are related to installed plugins for Neovim. 
+Most of the commands are related to installed plugins for Neovim.   
 For more information, refer to the plugin descriptions.
 
