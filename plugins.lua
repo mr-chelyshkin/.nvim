@@ -66,7 +66,6 @@ local plugins = {
           "terraform",
           "toml",
           "typescript",
-          "yaml",
         },
         highlight = {
           enable = true,
