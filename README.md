@@ -28,6 +28,7 @@ mv .nvim custom
 | [:Lazy sync]       | reinstall all plugins                    |
 | [:MasonInstallAll] | reinstall all plugins                    |
 | [:TS...]           | highlight commands                       |
+
 Most of the commands are related to installed plugins for Neovim. 
 For more information, refer to the plugin descriptions.
 
