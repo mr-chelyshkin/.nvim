@@ -55,7 +55,6 @@ local plugins = {
           "lua",
           "markdown",
           "markdown_inline",
-          "perl",
           "proto",
           "python",
           "query",
