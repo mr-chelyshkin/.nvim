@@ -1,4 +1,12 @@
+---@type ChadrcConfig
 local M = {}
-M.ui = {theme = 'github_light'}
+
 M.plugins = "custom.plugins"
+
+local theme = require("custom.theme")
+M.ui = theme.ui
+
+local mappings = require("custom.mappings")
+M.mappings = mappings
+
 return M
