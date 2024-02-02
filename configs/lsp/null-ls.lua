@@ -31,7 +31,6 @@ local sources = {
 
   -- rust
   b.formatting.rustfmt,
-  b.diagnostics.rust_analyzer,
 
   -- python
   b.formatting.black,
