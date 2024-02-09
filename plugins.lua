@@ -40,4 +40,7 @@ return {
 		"hrsh7th/nvim-cmp",
 		opts = overrides.cmp,
 	},
+  {
+	  "fatih/vim-go"
+  }
 }
