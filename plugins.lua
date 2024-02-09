@@ -21,26 +21,23 @@ return {
   lsp,
 
   {
-		"williamboman/mason.nvim",
-		opts = overrides.mason,
-	},
-  {
-		"nvim-treesitter/nvim-treesitter",
-		opts = overrides.treesitter,
-	},
-  {
-		"nvim-tree/nvim-tree.lua",
-		opts = overrides.nvimtree,
-	},
-  {
-		"lewis6991/gitsigns.nvim",
-		opts = overrides.gitsigns,
-	},
-  {
-		"hrsh7th/nvim-cmp",
-		opts = overrides.cmp,
-	},
-  {
+	  "williamboman/mason.nvim",
+	  opts = overrides.mason,
+  }, {
+	  "nvim-treesitter/nvim-treesitter",
+	  opts = overrides.treesitter,
+  }, {
+	  "nvim-tree/nvim-tree.lua",
+	  opts = overrides.nvimtree,
+  }, {
+	  "lewis6991/gitsigns.nvim",
+	  opts = overrides.gitsigns,
+  }, {
+	  "hrsh7th/nvim-cmp",
+	  opts = overrides.cmp,
+  }, {
 	  "fatih/vim-go"
+  }, {
+	  "nvim-web-devicons"
   }
 }

@@ -13,22 +13,11 @@ mv .nvim custom
 # run nvim after for sync modules.
 ```
 
-# Helpers
-| Hotkey / CMD       | Description                              |
-|--------------------|------------------------------------------|
-| [SPC+T+H]          | select theme                             |
-| [CTRL+N]           | open tree                                |
-| [SPC+F+F]          | find files                               |
-| [SPC+C+H]          | help for default commands                |
-| [SPC+R+N]          | switch line numbers: absolute / relative |
-| [TAB]              | switch another open tab                  |
-| [SPC + X]          | close tab                                |
-| [SPC + H / V]      | open terminal (horizontal / vertical)    |
-| [:vsp]             | vertical split window                    |
-| [:Lazy sync]       | reinstall all plugins                    |
-| [:MasonInstallAll] | reinstall all plugins                    |
-| [:TS...]           | highlight commands                       |
+## Customization
+Feel free to modify any of the Lua files to match your personal preferences. The setup is designed to be modular, making it easy to add or remove configurations as needed.
 
-Most of the commands are related to installed plugins for Neovim.   
-For more information, refer to the plugin descriptions.
+## Contributing
+Contributions to this Neovim configuration are welcome! Whether it's adding new features, improving existing configurations, or fixing bugs, your input is valuable. Please feel free to fork the repository and submit pull requests.
 
+## License
+This Neovim configuration is open-sourced software licensed under the MIT license.

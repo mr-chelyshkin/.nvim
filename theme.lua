@@ -25,7 +25,7 @@ M.options = {
   cmdheight = 2,
 
   -- relative numbers from line cursor is on 
-  relativenumber = true,
+  relativenumber = false,
 
   -- highlight all matches of previous search pattern 
   hlsearch = true,
