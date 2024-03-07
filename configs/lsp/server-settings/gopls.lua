@@ -16,7 +16,7 @@ return {
             experimentalPostfixCompletions = true,
 
             -- uses gofumpt for formatting instead of gofmt
-            gofumpt = true,
+            gofumpt = false,
 
             -- sets the search type for autocompletion
             matcher = "Fuzzy",
