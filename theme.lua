@@ -1,7 +1,7 @@
 local M = {}
 
 M.ui = {
-    theme = "github_light",
+    theme = "github_dark",
 
     hl_override = {
         Comment = {

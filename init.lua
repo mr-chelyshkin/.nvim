@@ -1,4 +1,5 @@
 require("custom.globals")
+require("custom.autocmds")
 
 local theme = require("custom.theme")
 for key, value in pairs(theme.options) do

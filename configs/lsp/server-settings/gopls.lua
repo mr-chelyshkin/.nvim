@@ -26,6 +26,12 @@ return {
 
             -- enables the use of placeholders in functions
             usePlaceholders = true,
+
+            -- enables the semantic syntax highlight
+            semanticTokens = true,
+
+            -- show docs 
+            hoverKind = "FullDocumentation"
         },
     },
 }

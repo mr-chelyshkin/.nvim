@@ -24,11 +24,12 @@ end
 
 local config = {
 	virtual_text = false,
+  signs = true,
 	underline = true,
 	update_in_insert = false,
 	severity_sort = true,
 	float = {
-		focusable = false,
+		focusable = true,
 		style = "minimal",
 		border = "single",
 		source = "always",
