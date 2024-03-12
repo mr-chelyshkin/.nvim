@@ -21,6 +21,7 @@ M.lsp = {
     ["<Leader>ld"] = { "<cmd>lua vim.lsp.buf.hover() <CR>",          "Show description",       {noremap = true, silent = true} },
     ["<Leader>li"] = { "<cmd>lua vim.lsp.buf.implementation() <CR>", "Jump to implementation", {noremap = true, silent = true} },
     ["<Leader>lj"] = { "<cmd>lua vim.lsp.buf.definition() <CR>",     "Jump to defenition",     {noremap = true, silent = true} },
+    ["<Leader>lw"] = { "<cmd>lua vim.diagnostic.setloclist() <CR>",  "Show file diagnostic",   {noremap = true, silent = true} },
   }
 }
 
