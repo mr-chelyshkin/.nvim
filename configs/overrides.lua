@@ -58,6 +58,7 @@ M.mason = {
 		"golines",
 		"gomodifytags",
 		"gopls",
+    "gotests",
 
     -- rust
     "rust-analyzer",
