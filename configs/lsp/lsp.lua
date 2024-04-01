@@ -7,13 +7,13 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 local lspconfig = require("lspconfig")
 local providers = require("custom.providers")
 
-for _, provider in pairs(providers.provide) do 
+for _, provider in pairs(providers.provide) do
   local opts = {
 		on_attach = on_attach,
 		capabilities = capabilities,
 	}
 
-  if provider.lsp and provider.lsp ~= "" then 
+  if provider.lsp and provider.lsp ~= "" then
     local exists, settings = pcall(require, "custom.configs.lsp.server-settings." .. provider.lsp)
     if exists then
       opts = merge_tb("force", settings, opts)

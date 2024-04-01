@@ -39,5 +39,12 @@ return {
 	  "fatih/vim-go"
   }, {
 	  "nvim-web-devicons"
-  }
+  }, {
+    "ray-x/go.nvim",
+    dependencies = {
+      "ray-x/guihua.lua",
+    },
+    event = {"CmdlineEnter"},
+    ft = {"go", 'gomod'},
+  },
 }
